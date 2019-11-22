@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <node pkg="robot_localization" name="ekf_localization" type="ekf_localization_node">
+        <rosparam command="load" file="$(find ekf_fusion)/config/ekf_localization.yaml"/>
+    </node>
+
+    <node pkg="tf" type="static_transform_publisher" name="odom_to_world" 
+       args="76.854369776 58.5143464227 0.182114674989 0.0 0.0 0.0 /world /sensor_odom_frame 40" />
+    <node pkg="tf" type="static_transform_publisher" name="odom_to_pose" 
+       args="1.0 0.0 0.0 0.0 0.0 0.0 /sensor_odom_frame /sensor_pose_frame 40" />
+
+</launch>

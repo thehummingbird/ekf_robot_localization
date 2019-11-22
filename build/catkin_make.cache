@@ -1,0 +1,2 @@
+ekf_fusion:robot_localization
+-DCATKIN_DEVEL_PREFIX=/home/sharad/ROSProjects/sensorf/devel -DCMAKE_INSTALL_PREFIX=/home/sharad/ROSProjects/sensorf/install -G Unix Makefiles
