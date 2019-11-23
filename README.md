@@ -1,5 +1,5 @@
 # ekf_robot_localization
-This task aims to fuse 2 sensor data streams in my rosbag file. The first stream on topic /SensorA/odom has msg type "nv_msgs/Odometry"
+This task aims to fuse 2 sensor data streams in my rosbag file. The first stream on topic /SensorA/odom has msg type "nav_msgs/Odometry"
 The second stream on topic /SensorB/data has msg type "geometry_msg/PoseStamped"
 
 Process-
